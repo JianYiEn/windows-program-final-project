@@ -1,0 +1,4 @@
+repository "知識王@ian9025623931@cloud"
+  path "/"
+    br "/main"
+    co "/main"
