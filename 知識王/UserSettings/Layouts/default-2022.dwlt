@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: "\u5C08\u6848"
+  m_Title: "\u968E\u5C64"
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -413,9 +413,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f4620000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 62f7ffff1afbffff
+      m_SelectedIDs: 0ef8ffff
+      m_LastClickedID: -2034
+      m_ExpandedIDs: 0ef8fffff0f8ffff56f9ffffa0f9ffff1afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -834,9 +834,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 245.51321, y: 21.708427, z: -2.352244}
+    m_Target: {x: 540.89526, y: 270.45245, z: -1.1235237}
     speed: 2
-    m_Value: {x: 233.42325, y: 23.460596, z: -2.2065616}
+    m_Value: {x: 540.89526, y: 270.45245, z: -1.1235237}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -886,9 +886,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 338.30185
+    m_Target: 346.65112
     speed: 2
-    m_Value: 323.73383
+    m_Value: 346.65112
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -958,7 +958,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Pic
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -966,16 +966,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Pic
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "C:\\Users\\User\\Documents\\GitHub\\\u77E5\u8B58\u738B\\windows-program-final-project\\\u77E5\u8B58\u738B"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 0e610000
-    m_LastClickedID: 24846
-    m_ExpandedIDs: 000000000e610000106100001261000028610000d4620000dc62000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 4a620000
+    m_LastClickedID: 25162
+    m_ExpandedIDs: 00000000d6610000d8610000da61000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1003,7 +1003,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000e6100001061000012610000
+    m_ExpandedIDs: 00000000d6610000d8610000da610000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
