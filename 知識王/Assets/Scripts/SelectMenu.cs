@@ -8,4 +8,12 @@ public class SelectMenu : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+    public void ReviewButton()
+    {
+        SceneManager.LoadScene("ReviewScene");
+    }
+    public void TestButton()
+    {
+        SceneManager.LoadScene("TestScene");
+    }
 }
