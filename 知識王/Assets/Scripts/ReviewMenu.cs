@@ -5,8 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class ReviewMenu : MonoBehaviour
 {
+    public AudioSource audioSource;
+    public AudioClip buttonClickSound;
     public void Goback()
     {
-        SceneManager.LoadScene("SelectMenu");
+        StartCoroutine(PlaySoundThenLoadScene(buttonClickSound, "SelectMenu"));
+    }
+    private IEnumerator PlaySoundThenLoadScene(AudioClip clip, string sceneName)
+    {
+        audioSource.PlayOneShot(clip);
+        yield return new WaitForSeconds(clip.length);
+        SceneManager.LoadScene(sceneName);
     }
 }
