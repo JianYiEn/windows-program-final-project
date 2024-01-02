@@ -4,16 +4,24 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class SelectMenu : MonoBehaviour
 {
+    public AudioSource audioSource;
+    public AudioClip buttonClickSound;
     public void HomeButton()
     {
-        SceneManager.LoadScene("MainMenu");
+        StartCoroutine(PlaySoundThenLoadScene(buttonClickSound, "MainMenu"));
     }
     public void ReviewButton()
     {
-        SceneManager.LoadScene("ReviewScene");
+        StartCoroutine(PlaySoundThenLoadScene(buttonClickSound, "ReviewScene"));
     }
     public void TestButton()
     {
-        SceneManager.LoadScene("TestScene");
+        StartCoroutine(PlaySoundThenLoadScene(buttonClickSound, "TestScene"));
+    }
+    private IEnumerator PlaySoundThenLoadScene(AudioClip clip, string sceneName)
+    {
+        audioSource.PlayOneShot(clip);
+        yield return new WaitForSeconds(clip.length);
+        SceneManager.LoadScene(sceneName);
     }
 }
