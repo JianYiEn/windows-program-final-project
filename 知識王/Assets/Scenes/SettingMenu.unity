@@ -241,7 +241,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 176, y: -24}
+  m_AnchoredPosition: {x: 184, y: 165}
   m_SizeDelta: {x: 593, y: 173}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &294682771
@@ -364,14 +364,14 @@ RectTransform:
   m_GameObject: {fileID: 311072104}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.55, y: 0.55, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 571508341}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 57.191284, y: -62.058105}
+  m_AnchoredPosition: {x: 58, y: -63}
   m_SizeDelta: {x: 140, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &311072106
@@ -504,7 +504,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 176, y: 114}
+  m_AnchoredPosition: {x: 184, y: -23}
   m_SizeDelta: {x: 593, y: 173}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &340734577
@@ -708,6 +708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundButton: {fileID: 189743851}
+  themeButton: {fileID: 340734577}
   audioSource: {fileID: 1696058749}
   buttonClickSound: {fileID: 8300000, guid: addc010f4de1c88438b04177c2bd8558, type: 3}
 --- !u!1 &1260933698
@@ -855,6 +856,7 @@ GameObject:
   - component: {fileID: 1296423915}
   - component: {fileID: 1296423917}
   - component: {fileID: 1296423916}
+  - component: {fileID: 1296423918}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -919,6 +921,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1296423914}
   m_CullTransparentMesh: 1
+--- !u!114 &1296423918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296423914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d2fbfb3d93f09646b731fd3847987d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dayBackground: {fileID: 21300000, guid: d614d4d6fd1de8444b0d9400545de513, type: 3}
+  nightBackground: {fileID: 21300000, guid: 3bc718d9c4d1d6241805a78a468d77a3, type: 3}
 --- !u!1 &1540855999
 GameObject:
   m_ObjectHideFlags: 0
