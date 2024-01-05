@@ -31,6 +31,7 @@ public class QuizManager2 : MonoBehaviour
     private string selectedAnswer; // 選中的答案
     private string correctAnswer;
     public Button checkAnswerButton;
+    public TextMeshProUGUI endMessageText;
 
     void Start()
     {
@@ -114,7 +115,17 @@ public class QuizManager2 : MonoBehaviour
             }
         }
 
-        continueButton.gameObject.SetActive(true);
+        if (currentQuestionIndex >= totalQuestions - 1)
+        {
+            // 最後一題已回答
+            endMessageText.gameObject.SetActive(true);
+            endMessageText.text = "測驗結束!";
+            continueButton.gameObject.SetActive(false); // 不再顯示繼續按鈕
+        }
+        else
+        {
+            continueButton.gameObject.SetActive(true); // 顯示繼續按鈕以進入下一題
+        }
     }
 
     void ResetButtonColors()
@@ -138,17 +149,18 @@ public class QuizManager2 : MonoBehaviour
 
     public void Continue()
     {
-        currentQuestionIndex++;
-        if (currentQuestionIndex < totalQuestions)
+        
+        if (currentQuestionIndex < totalQuestions - 1)
         {
+            currentQuestionIndex++;
             GenerateQuestion();
             continueButton.gameObject.SetActive(false);
             resultText.gameObject.SetActive(false);
         }
         else
         {
-            Debug.Log("測驗結束");
-            // 這裡可以添加測驗結束後的邏輯
+            
+            endMessageText.text = "測驗結束!";
         }
     }
 }

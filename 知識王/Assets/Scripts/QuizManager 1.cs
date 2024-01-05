@@ -27,6 +27,7 @@ public class QuizManager1 : MonoBehaviour
     public Color correctColor = Color.green; // 正確答案的顏色
     public Color wrongColor = Color.red; // 錯誤答案的顏色
     public Button checkAnswerButton;
+    public TextMeshProUGUI endMessageText;
 
     void Start()
     {
@@ -88,12 +89,23 @@ public class QuizManager1 : MonoBehaviour
                 button.GetComponent<Image>().color = normalColor; // 其他答案保持普通顏色
             }
         }
-        continueButton.gameObject.SetActive(true);
+        if (currentQuestionIndex >= totalQuestions - 1)
+        {
+            // 最後一題已回答
+            endMessageText.gameObject.SetActive(true);
+            endMessageText.text = "測驗結束!";
+            continueButton.gameObject.SetActive(false); // 不再顯示繼續按鈕
+        }
+        else
+        {
+            continueButton.gameObject.SetActive(true); // 顯示繼續按鈕以進入下一題
+        }
     }
 
 
     void GenerateQuestion()
     {
+        resultText.gameObject.SetActive(false);
         if (questions.Count > 0)
         {
             int randomIndex = Random.Range(0, questions.Count);
@@ -160,8 +172,7 @@ public class QuizManager1 : MonoBehaviour
         }
         else
         {
-            // 這裡可以放置測驗結束時的邏輯
-            Debug.Log("測驗結束");
+            endMessageText.text = "測驗結束!";
         }
     }
     void ResetButtonColors()
