@@ -611,7 +611,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: testScene
+          m_StringArgument: testScene 1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &124845277
@@ -2432,7 +2432,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 742009373}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1849346975}
+        m_TargetAssemblyTypeName: selectTest, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: testScene 2
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &742009373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3545,7 +3557,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1094244469}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1849346975}
+        m_TargetAssemblyTypeName: selectTest, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: testScene 1
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1094244469
 MonoBehaviour:
   m_ObjectHideFlags: 0
