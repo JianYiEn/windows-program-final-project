@@ -53,6 +53,7 @@ public class SettingMenu : MonoBehaviour
         {
             audioManager.RefreshAudioSettings();
         }
+        audioSource.PlayOneShot(buttonClickSound);
     }
 
 
@@ -70,6 +71,7 @@ public class SettingMenu : MonoBehaviour
         {
             backgroundManager.ApplyBackgroundTheme();
         }
+        audioSource.PlayOneShot(buttonClickSound);
     }
 
     void UpdateButtonVisuals()

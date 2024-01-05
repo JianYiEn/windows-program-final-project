@@ -6,6 +6,7 @@ public class SelectMenu : MonoBehaviour
 {
     public AudioSource audioSource;
     public AudioClip buttonClickSound;
+    public GameObject selectTestPanel;
     public void HomeButton()
     {
         StartCoroutine(PlaySoundThenLoadScene(buttonClickSound, "MainMenu"));
@@ -16,7 +17,10 @@ public class SelectMenu : MonoBehaviour
     }
     public void TestButton()
     {
-        StartCoroutine(PlaySoundThenLoadScene(buttonClickSound, "TestScene"));
+        audioSource.PlayOneShot(buttonClickSound);
+
+        // 顯示 selectTest Panel
+        selectTestPanel.SetActive(true);
     }
     private IEnumerator PlaySoundThenLoadScene(AudioClip clip, string sceneName)
     {
